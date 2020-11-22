@@ -1,11 +1,11 @@
-import '../css/style.css'
-
 /* eslint-disable no-plusplus */
 /* eslint-disable max-len */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
 
-// сделаем настраиваемый размер поля
+import '../css/style.css'
+
+// сделаем настраиваемый размер поля, но со склеиванием чисел и строк возиться лень, чтоб совсем динамически, поэтому ширины захардкодим
 const FIELD_DIMENSION = 4
 const CELL_SIZE = '200px'
 const field = document.getElementById('field')
@@ -44,6 +44,7 @@ function moveCharacter() {
     const filledCell = document.getElementById(position)
     filledCell.appendChild(img)
   } else {
+    // вроде бы уместно тут вызвать рекурсивно?
     moveCharacter()
   }
 }
