@@ -1,18 +1,18 @@
 body {
   color: #fff;
-  background-color: #000;
-  margin: auto;
+  background-color: #222;
 }
 
 #field {
   display: flex;
   flex-wrap: wrap;
-  
+  margin: auto;
+  margin-top: 2em;
 }
 
 .cell {
   background-color: #ccc;
-  border: 2px #fff solid;
+  border: 2px #222 solid;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
