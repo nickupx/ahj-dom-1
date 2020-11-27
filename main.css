@@ -1,0 +1,28 @@
+body {
+  color: #fff;
+  background-color: #222;
+}
+
+#field {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.cell {
+  background-color: #ccc;
+  border: 2px #222 solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+}
+
+#table-movies tr td {
+  padding: 0.5em;
+}
