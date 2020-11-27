@@ -1,9 +1,13 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable consistent-return */
+/* eslint-disable guard-for-in */
 /* eslint-disable no-plusplus */
 /* eslint-disable max-len */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
 
 import '../css/style.css'
+import Table from './table'
 
 // сделаем настраиваемый размер поля
 const FIELD_DIMENSION = 4
@@ -51,3 +55,10 @@ function moveCharacter() {
 }
 
 setInterval(moveCharacter, 1000)
+
+// loading and sorting
+
+const table = new Table()
+table.init()
+
+document.getElementById('table-header').addEventListener('click', (e) => table.sort(e.target.dataset.title))
